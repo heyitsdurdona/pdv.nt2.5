@@ -35,202 +35,261 @@ a{
 }
 
 
-/* ------------------------ INTRO START----------------- */
-.site-intro{
-    width: 100%;
-    height: 100vh;
-}
-
-.site-intro-wrapper{
+/* -------------------------  MAIN START ------------------------*/
+/* ------------------------- HERO START ------------------------ */
+.hero{
     display: flex;
     justify-content: space-between;
-    /* gap: 80px; */
     align-items: center;
-    padding-top: 109px;
-    padding-bottom: 67px;
+    gap: 80px;
+
+    margin-top: 109px;
+    margin-bottom: 69px;
 }
 
-.site-intro__text-wrapper{
+.hero__text-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
-.site-intro__title{
+.hero__title{
     font-size: 52px;
     line-height: 125%;
     letter-spacing: 0%;
     color: #363738;
 }
 
-.site-intro__info{
-    font-family: 'PT sans', sans-serif;
+.hero__info{
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    max-width: 525px;
     line-height: 150%;
+    letter-spacing: 0%;
     color: #6B6B6C;
 }
 
-.more{
-    font-family: 'PT sans', sans-serif;
+
+.hero__link{
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
+    letter-spacing: 0%;
     color: #363738;
-    cursor: pointer;
     padding-bottom: 10px;
     border-bottom: 3px solid #FFCE50;
-}
 
-.site-intro__img{
-    display: block;
-}
+} 
+/* ------------------------- HERO END ------------------------ */
 
-.site-intro__tablet-img{
-    display: none;
-    width: 690px;    
-}
-
-.site-intro__mobile-img{
-    display: none;
-    width: 345px;
-}
-
-
-/* ------------------ INTRO CARDS START -----------------*/
-.intro__card{
-    background-color: #fff;
-    border-radius: 20px;
-    padding-top: 40px;
-    padding-bottom: 56px;
+/* ------------------------- SERVICES START ------------------- */
+.services{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
 
-    margin-bottom: 67px;
+    padding-top: 40px;
+    padding-bottom: 56px;  
+    justify-content: space-between; 
+    border-radius: 20px;
+    margin-bottom: 67px; 
 }
 
-.intro__card-section{
-    max-width: 228px;
-    text-align: start;
-
-    /* padding-right: 105px;
-    border-right: 1px solid #D7D7DD; */
+.services__card{
+    margin-left: 64px;
+    padding-right: 105px;
+    border-right: 1px solid #D7D7DD;
 }
 
-.intro__card-img{
+.services__card:last-child{
+    border: none;
+}
+
+.service__card-img{
     margin-bottom: 24px;
+    
 }
 
-.intro__card-section-title{
+.services__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: #363738;
+
+    margin-bottom: 16px;
+}
+
+.services__info{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #6B6B6C;
+}
+/* ------------------------- SERVICES END --------------------- */
+
+/* ------------------------- WHY CHOOSE START ----------------- */
+.why-choose{
+    margin-bottom: 120px;
+}
+.why-choose__img-wrapper{
+    padding-top: 178px;
+    padding-bottom: 166px;
+    padding-left: 90px;
+    background-image: url(../images/why-choose-bg2.svg),
+    url(../images/why-choose-bg.png);
+    background-repeat: no-repeat;   
+    
+    margin-bottom: 73px;
+}
+
+.why-choose__title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 128%;
+    letter-spacing: 0%;
+
+    color: #fff;
+    width: 363px;
+}
+
+.why-choose__card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 62px;
+}
+
+.why-choose__card{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    flex-basis: calc(50% - 31px);
+}
+
+.why-choose__card-title{
+    font-weight: 600;
     font-size: 20px;
     line-height: 135%;
     color: #363738;
     margin-bottom: 16px;
 }
 
-.intro__card-info{
-    font-family: 'PT sans', sans-serif;
+.why-choose__info{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #6B6B6C;
+}
+/* ------------------------- WHY CHOOSE END ------------------- */
+
+/* ------------------------- COMPLITED WORK START -------------- */
+.complited-work{
+    margin-bottom: 212px;
+}
+
+.complited-work__title{
+    font-size: 48px;
+    line-height: 125%;
+    color: #363738;
+    /* margin-bottom: 32px; */
+}
+
+.complited-work__info{
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: #6B6B6C;
+    margin-bottom: 56px;
+    width: 667px;
 }
-/* ------------------ INTRO CARDS END ----------------- */
+
+.complited-work__card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.complited-work__card{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.complited-work__card-text-wrapper{
+    padding: 24px 32px 32px;    
+}
+
+.complited-work__card-title{
+    font-size: 20px;
+    line-height: 135%;
+    letter-spacing: 0%;
+    color: #363738;
+    margin-bottom: 16px;
+}
+
+.complited-work__card-info{
+    font-family: 'PT Sans',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #6B6B6C;
+    margin-bottom: 32px;;
+}
+
+.complited-work__card-price{
+    font-size: 16px;
+    color: #363738;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FFCE50;
+}
+
+/* ------------------------- COMPLITED WORK END ---------------- */
+/* -------------------------  MAIN END ------------------------ */
 
 
+@media only screen and (max-width: 1242px){
 
-/* ------------------------ INTRO END----------------- */
+}
 
-
-
-
-@media only screen and (max-width: 960px) {
-    .site-intro-wrapper{
-        flex-direction: column;
-        /* margin-bottom: 41px; */
-    }
-
-    .site-intro__text-wrapper{
+@media only screen and (max-width: 992px){
+    .hero{
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
-
-        margin-bottom: 73px;
+        align-items: center;
     }
-    
-    .site-intro__title{
+}
+
+@media only screen and (max-width: 768px){
+    .hero__title{
         font-size: 44px;
     }
 
-    .site-intro__img{
-        display: none;
+    .hero__info{
+        font-size: 16px;
     }
 
-    .site-intro__tablet-img{
-        display: none;
+    .why-choose__card {
+        flex-basis: 100%; 
     }
 
-    .intro__card {
-        flex-direction: column; 
-        align-items: center;
-        padding: 20px; 
-        gap: 20px;   
-        
-        background-color: transparent;
-    }
-
-    .intro__card-section {
-        max-width: 100%; 
-        text-align: start;
-        display: flex; 
-        gap: 32px;
-
-        background-color: #fff;
-        padding: 32px 140px 40px 32px;
-        border-radius: 20px;
-
-    }
 }
 
-
-@media only screen and (max-width: 768px){
-    .site-intro__img{
-        display: none;
-    }
-
-    .site-intro__tablet-img{
-        display: none;
-    }
-
-    .site-intro__mobile-img{
-        display: block;
-        width: 345px;
-    }
-
-    .site-intro__text-wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: start;
-    }
-
-    .site-intro__title{
+@media only screen and (max-width: 576px){
+    .hero__title{
         font-size: 28px;
-        text-align: start;
     }
 
-    .site-intro__info{
+    .hero__info{
         font-size: 15px;
-        /* margin-bottom: 32px; */
-    }
-
-    .intro__card{
-        flex-direction: column;
-    }
-
-    .intro__card-section{
-        flex-direction: column;
     }
 }

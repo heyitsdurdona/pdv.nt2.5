@@ -10,56 +10,132 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- INTRO START -->
-    <div class="site-intro">
+    <!-- MAIN START -->
+    <main class="site-main">
         <div class="container">
-            <div class="site-intro-wrapper">
-                <div class="site-intro__text-wrapper">
-                    <h1 class="site-intro__title">Поставщик Дальнего Востока</h1>
-                    <p class="site-intro__info">Наши клиенты получают полный спектр услуг по работе с Китаем. Начиная с подбора производителя заканчивая доставкой товара до двери. Настолько прозрачных сделок с Китаем вы еще не осуществляли.
+            <!-- HERO START -->
+            <section class="hero">
+                <div class="hero__text-wrapper">
+                    <h1 class="hero__title">Поставщик Дальнего Востока</h1>
+                    <p class="hero__info">Наши клиенты получают полный спектр услуг по работе с Китаем. Начиная с подбора производителя заканчивая доставкой товара до двери. Настолько прозрачных сделок с Китаем вы еще не осуществляли.
                     </p>
-                    <a href="#" class="site-intro__more-link"><span class="more">Узнать больше</span></a>
-                </div>
-                <div class="site-intro__img-wrapper">
-                    <img class="site-intro__img" src="./images/adir-Cargo-Insurance-desktop.png" alt="Cargo insurance" width="635" height="505">
-                    <img class="site-intro__tablet-img" src="./images/adir-Cargo-Insurance-tablet.png" alt="Cargo-insurance" >
-                    <img class="site-intro__mobile-img" src="./images/adir-Cargo-Insurance 1-mobile.png" alt="Cargo insurance" >
-                </div>
-                
-                
-                
-            </div>
-            
-            <!-- INTRO CARDS START -->
-            <div class="intro__card">
-                <div class="intro__card-section">
-                    <img class="intro__card-img" src="./images/intro-card1.svg" alt="img" width="92" height="92">
                     <div>
-                        <h3 class="intro__card-section-title">Поиск производителей по товару</h3>
-                        <p class="intro__card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.</p>
-                    </div>                    
-                </div>
-                <div class="intro__card-section">
-                    <img class="intro__card-img" src="./images/intro-card2.svg" alt="img" width="92" height="92">
-                    <div>
-                        <h3 class="intro__card-section-title">Поиск производителей по товару</h3>
-                        <p class="intro__card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.</p>
-                    </div>                    
-                </div>
-                <div class="intro__card-section">
-                    <img class="intro__card-img" src="./images/intro-card3.svg" alt="img" width="92" height="92">
-                    <div>
-                        <h3 class="intro__card-section-title">Поиск производителей по товару</h3>
-                        <p class="intro__card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.</p>
-                    </div>                    
+                        <a class="hero__link" href="#">Узнать больше</a>
+                    </div>
+                    
                 </div>
                 
-                
-            </div>
-            <!-- INTRO CARDS END -->
-        </div>
-    </div>
-    <!-- INTRO END -->
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/adir-Cargo-Insurance-desktop.png">
+                    <source media="(min-width: 768px)" srcset="./images/adir-Cargo-Insurance-tablet.png">
+                    <source media="(min-width: 576px)" srcset="./images/adir-Cargo-Insurance-mobile.png">
+                    <img class="hero__img" src="./images/adir-Cargo-Insurance-mobile.png" alt="hero image">
+                </picture>                           
+            </section>           
+            <!-- HERO END -->
+
+            <!-- SERVICES START -->
+             <section class="services">
+                <div class="services__card">
+                    <img class="service__card-img" src="./images/intro-card1.svg" alt="img" >
+                    <h3 class="services__title">Поиск производителей по товару
+                    </h3>
+                    <p class="services__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.</p>
+                </div>
+                <div class="services__card">
+                    <img class="service__card-img" src="./images/intro-card1.svg" alt="img" >
+                    <h3 class="services__title">Поиск производителей по товару
+                    </h3>
+                    <p class="services__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.</p>
+                </div>
+                <div class="services__card">
+                    <img class="service__card-img" src="./images/intro-card1.svg" alt="img" >
+                    <h3 class="services__title">Поиск производителей по товару
+                    </h3>
+                    <p class="services__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.</p>
+                </div>
+             </section>
+             <!-- SERVICES END -->
+
+             <!-- WHY CHOOSE START -->
+             <section class="why-choose">
+                <div class="why-choose__img-wrapper">
+                    <h2 class="why-choose__title">Почему с нами выгоднее?</h2>
+                </div>
+
+                <div class="why-choose__card-wrapper">
+                    
+                    <div class="why-choose__card">
+                        <img class="why-choose__icon" src="./images/why-choose-icon1.svg" alt="icon" >
+                        <div class="why-choose__card-text-wrapper">
+                            <h4 class="why-choose__card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="why-choose__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose__card">
+                        <img class="why-choose__icon" src="./images/why-choose-icon2.svg" alt="icon" >
+                        <div class="why-choose__card-text-wrapper">
+                            <h4 class="why-choose__card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="why-choose__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose__card">
+                        <img class="why-choose__icon" src="./images/why-choose-icon3.svg" alt="icon" >
+                        <div class="why-choose__card-text-wrapper">
+                            <h4 class="why-choose__card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="why-choose__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                        </div>
+                    </div>
+                    <div class="why-choose__card">
+                        <img class="why-choose__icon" src="./images/why-choose-icon4.svg" alt="icon" >
+                        <div class="why-choose__card-text-wrapper">
+                            <h4 class="why-choose__card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="why-choose__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                        </div>
+                    </div>
+                </div>
+             </section>
+             <!-- WHY CHOOSE END -->
+
+            <!-- COMPLITED WORK START -->
+             <section class="complited-work">
+                <div class="complited-work__text-wrapper">
+                    <h2 class="complited-work__title">Выполненные работы</h2>
+                    <p class="complited-work__info">Мы собрали информацию по грузам, которые мы уже доставили.У нас специальный подход к каждому виду товаров.
+                    </p>
+                </div>
+                <div class="complited-work__card-wrapper">
+                    <div class="complited-work__card">
+                        <img class="complited-work__card-img" src="./images/complited-work1.png" alt="img" width="393" height="247">
+                        <div class="complited-work__card-text-wrapper">
+                            <h3 class="complited-work__card-title">Станки и оборудование</h3>
+                            <p class="complited-work__card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            <span class="complited-work__card-price">20 000 руб.</span>
+                        </div>
+                    </div>
+                    <div class="complited-work__card">
+                        <img class="complited-work__card-img" src="./images/complited-work1.png" alt="img" width="393" height="247">
+                        <div class="complited-work__card-text-wrapper">
+                            <h3 class="complited-work__card-title">Станки и оборудование</h3>
+                            <p class="complited-work__card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            <span class="complited-work__card-price">20 000 руб.</span>
+                        </div>
+                    </div>
+                    <div class="complited-work__card">
+                        <img class="complited-work__card-img" src="./images/complited-work1.png" alt="img" width="393" height="247">
+                        <div class="complited-work__card-text-wrapper">
+                            <h3 class="complited-work__card-title">Станки и оборудование</h3>
+                            <p class="complited-work__card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            <span class="complited-work__card-price">20 000 руб.</span>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- COMPLITED WORK END -->
+        </div>        
+    </main>    
+    <!-- MAIN END -->
+    
     
 </body>
 </html>
